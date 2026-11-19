@@ -25,7 +25,7 @@ region = st.selectbox("Select Region:",
 # Submit button
 if st.button("Submit"):
     # Display entered values
-st.write(f"Your Target Sales is ${target_sales}")
+  st.write(f"Your Target Sales is ${target_sales}")
 
     # Success message
 st.success("Confirms successful update.")
