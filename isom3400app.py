@@ -65,5 +65,6 @@ col1.metric("Total Sales",
             f"${filtered_data['Sales'].sum():,.0f}")
 col2.metric("Total Expenses", 
             f"${filtered_data['Expenses'].sum():,.0f}")
+col3.metric("->")
 col4.metric("Profit", 
             f"${(filtered_data['Sales'].sum() - filtered_data['Expenses'].sum()):,.0f}")
