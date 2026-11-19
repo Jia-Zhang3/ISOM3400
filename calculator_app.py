@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Title
-st.title("Basic Web Calculator")
+st.title("ISOM3400: Basic Web Calculator")
 
 # Input fields
 num1 = st.number_input("Enter first number", value=0.0)
