@@ -1,4 +1,5 @@
 import streamlit as st
+import math
 
 # Title
 st.title("Basic Web Calculator")
@@ -25,14 +26,13 @@ if st.button("Calculate"):
     elif operation == "Divide":
         result = num1 / num2 if num2 != 0 else "Error: Division by zero"
     elif operation == "Sin()":
-        result = pass
+        result = math.sin(math.pi / 2)
     else:
         result = "Invalid operation!"
 
     st.success(f"Result: {result}")
 
 # Scientific Calculator
-import math
 
 st.header("Scientific Functions")
 operation_sci = st.selectbox("Choose scientific operation", ["Square Root", "Power", "Sin", "Cos", "Tan"])
